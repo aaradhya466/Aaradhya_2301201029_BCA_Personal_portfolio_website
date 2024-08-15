@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+header {
+    background: linear-gradient(to right, #00796b, #004d40); /* Teal gradient */
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #80cbc4; /* Light teal on hover */
+}
+
+section {
+    padding: 40px;
+    margin: 20px auto;
+    background: #1e1e1e; /* Darker section background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+}
+
+h2 {
+    color: #00796b; /* Accent color for headings */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid #00796b; /* Accent color for project border */
+    background: #2a2a2a; /* Slightly lighter background for projects */
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    margin: 0 0 10px;
+    color: #ffffff; /* White text for project title */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff; /* White text for labels */
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+    background: #3c3c3c; /* Dark background for inputs */
+    color: #ffffff; /* White text for inputs */
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00796b; /* Accent color on focus */
+    outline: none;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #00796b; /* Accent color for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background: #004d40; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #00796b; /* Accent color for footer */
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    header p {
+        font-size: 1.2em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    form {
+        padding: 0 20px;
+    }
+}
+
+
+
